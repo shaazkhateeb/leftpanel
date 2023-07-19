@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Panel</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .left-panel {
+            width: 180px;
+            height: 50vh;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .content {
+           flex-grow: 1;
+            padding: 20px;
+            display: none;
+        }
+        .content-active {
+            display: block;
+        }
+        .left-panel a:hover {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    
+        #home:target,
+        #contact:target,
+        #information:target,
+        #guide:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-panel">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#guide">Guide</a></li>
+        </ul>
+    </div>
+    <div class="content" id="home">
+        <h2>Home <span class="bi bi-house-exclamation-fill"></span></h2>
+        <p>Welcome To The Home Page!</p>
+    </div>
+    <div class="content" id="contact">
+        <h2>Contact <span class="bi bi-telephone"></span></h2>
+        <p>You Can Contact Out Here</p>
+    </div>
+    <div class="content" id="information">
+    <h2>Information <span class="bi bi-info-circle-fill"></span></h2>
+    <p>For More Information visit Here.</p>
+</div>
+<div class="content" id="guide">
+    <h2>Guide <span class="bi bi-ui-checks-grid"></span></h2>
+    <p>Go For a Step By Step Guide</p>
+</div>
+</body>
+</html>
